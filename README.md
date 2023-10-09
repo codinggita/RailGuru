@@ -32,7 +32,7 @@ Access RailGuru on the go with its mobile-responsive design, ensuring that you c
 RailGuru uses the latest data from Indian Railways to provide accurate and real-time information to users.
 
 ## Getting Started
-To get started with RailGuru, simply visit our website or download our mobile app. You can explore all the features and start planning your railway journeys with ease.
+To get started with RailGuru, simply visit our website. You can explore all the features and start planning your railway journeys with ease.
 
 RailGuru is an open-source project developed by a passionate community of railway enthusiasts and developers. We welcome contributions and feedback from users like you to continually improve and enhance the platform.
 
