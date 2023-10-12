@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.onStart{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(100deg,#324a8b,#1b8dc1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.heading1{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5em;
+}
