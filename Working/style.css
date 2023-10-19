@@ -113,9 +113,11 @@ nav{
 }
 .dropdown li{
     transition: all 0.5s;
+    padding-left: 30px;
 }
 .dropdown li:hover{
-    border: 1px solid white;
+    background-color: #1b8dc1;
+    border-radius: 20px;
 }
 
 .bar:hover{
