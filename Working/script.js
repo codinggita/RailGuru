@@ -1,7 +1,12 @@
 //on start
+
 function launch(){
+  var speechSynthesis = window.speechSynthesis;
+  var speechMessage2 = new SpeechSynthesisUtterance("Welcome To railguru");
+  speechSynthesis.speak(speechMessage2);
     var win = document.querySelector(".onStart");
     win.style.display = "flex";
+    
     setTimeout(function(){
 
         win.style.display = "none";
@@ -9,7 +14,7 @@ function launch(){
     },4000)
 }
 window.onload = launch()
- 
+
 //dropdown
 var drop = document.querySelector(".dropdown");
 var barElement = document.querySelector(".bar")
@@ -45,8 +50,9 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
+
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(cityName).style.display = "flex";
     evt.currentTarget.className += " active";
   }
+document.querySelector(".tablinks").click()

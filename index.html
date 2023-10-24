@@ -32,7 +32,7 @@
 						<a href="#">Home</a>
 					</li>
 					<li>
-						<a href="#about">PNR</a>
+						<a href="#pnr-sec">PNR</a>
 					</li>
 					<li>
 						<a href="#skills">Avalibility</a>
@@ -59,7 +59,7 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#about">PNR</a>
+                    <a href="#pnr-sec">PNR</a>
                 </li>
                 <li>
                     <a href="#skills">Avalibility</a>
@@ -76,38 +76,107 @@
                 </li>
             </ul>
         </div>
-
+        <div class="help"></div>
         <div class="main-nav">
             <div class="overlay">
                 <div class="welcome">
                     <h1>Welcome to RailGuru!</h1>
-                    <h2>We can help you in <span class="auto-type"></span></h2>
+                    <h2>We can help you in <br><span class="auto-type"></span></h2>
                 </div>
                 <div class="titles">
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'London')">PNR STATUS</button>
-                        <button class="tablinks" onclick="openCity(event, 'Paris')">SEARCH BY NAME/NUMBER</button>
-                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">SEARCH BY STATION</button>
+                        <button class="tablinks" onclick="openCity(event, 'PNR') ">PNR STATUS ENQUIRY</button>
                     </div>
                       
                       <!-- Tab content -->
-                      <div id="London" class="tabcontent">
-                        <h3>PNR</h3>
-                        <p></p>
-                      </div>
-                      
-                      <div id="Paris" class="tabcontent">
-                        <h3>Paris</h3>
-                        <p></p>
-                      </div>
-                      
-                      <div id="Tokyo" class="tabcontent">
-                        <h3>Tokyo</h3>
-                        <p></p>
+                      <div id="PNR" class="tabcontent">
+                        <div class="tabinfo">
+                            <div class="icon">
+                                <i class="fa-solid fa-train"></i>
+                            </div>
+                            <div class="info">
+                                <span class="heading2">
+                                    PNR Status & Prediction
+                                </span>
+                                <span class="heading3">
+                                    Know current status of your Train ticket and chances of W/L confirmation.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="tabuse">
+                            <div class="in">
+                                <label for="pnr" class="heading2">PNR NUMBER</label>
+                                <br>
+                                <input type="text" maxlength="10" minlength="10" id="pnr" placeholder="Enter your 10 digit PNR">
+                            </div>
+                            <div class="out">
+                                <button id="pnr-btn" class="button">SEARCH</button>
+                            </div>
+                        </div>
                       </div>
                 </div>
             </div>
         </div>
+
+        <section id="pnr-sec">
+            <div class="sec-head">
+                <div class="head">
+                    <h1>PNR STATUS CHECK</h1>
+                </div>
+                <div class="sec-input">
+                    <input type="text" maxlength="10" minlength="10" id="pnr2" placeholder="Enter your 10 digit PNR">
+                    <button id="pnr3" class="button">Ckeck</button>
+                </div>
+            </div>
+            <div id="pnr-result">
+                <div id="route">
+                    <div id="start-sta">
+                        <span id="ss">Station</span>
+                       <br><span id="sc">Time</span>
+                    </div>
+                    <div id="divider">
+                        <div id="km">Distance</div>
+                    </div>
+                    <div id="end-sta">
+                        <span id="es">Station</span>
+                       <br><span id="ec">Time</span>
+                    </div>
+                </div>
+                <div id="status">
+                    STATUS
+                </div>
+                <div id="details">
+                    <div id="pnr-no">
+                        <span>PNR:</span>
+                        <span>0000000000</span>
+                    </div>
+                    <div id="train-no">
+                        <span>Train No:</span>
+                        <span>xyz</span>
+                    </div>
+                    <div id="train-name">
+                        <span>Train Name:</span>
+                        <span>0000</span>
+                    </div>
+                    <div id="class">
+                        <span>Class:</span>
+                        <span>X</span>
+                    </div>
+                    <div id="bpt">
+                        <span>Boarding Platform:</span>
+                        <span>Pt</span>
+                    </div>
+                    <div id="dpt">
+                        <span>Destination Platform:</span>
+                        <span>Pt</span>
+                    </div>
+                    <div id="nop">
+                        <span>No of passengers:</span>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </div>
     <!-- bootstrap -->
@@ -126,5 +195,6 @@
             loop: true
         })
     </script>
+    <script src="./Working/pnr.js"></script>
 </body>
 </html>
