@@ -3,7 +3,7 @@
 function launch(){
   var speechSynthesis = window.speechSynthesis;
   var speechMessage2 = new SpeechSynthesisUtterance("Welcome To railguru");
-  speechSynthesis.speak(speechMessage2);
+  // speechSynthesis.speak(speechMessage2);
     var win = document.querySelector(".onStart");
     win.style.display = "flex";
     
