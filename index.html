@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="onStart animate__animated animate__slideOutUp animate__delay-2s grad-bg-blue">
-        <img id="onstart-logo" class="animate__animated animate__bounceInDown animate__pulse" src="Media/icon_nbg - Copy.png">
+        <img id="onstart-logo" class="animate__animated animate__bounceInDown animate__pulse" src="Media/icon_nbg - Copy.png" >
         <br>
         <h1 class="heading1 animate__animated animate__flipInX">RailGuru</h1>
     </div>
@@ -24,7 +24,7 @@
         <!-- nav -->
         <nav>
             <div class="brand">
-                <img src="Media/logo_blue_nbg.jpg">
+                <img src="Media/logo_blue_nbg.jpg" class="animate__animated  animate__tada animate__infinite">
             </div>
             <div class="menu">
                 <ul class="no-list-style horizontal-list text-center nav-menu">
@@ -32,21 +32,12 @@
 						<a href="#">Home</a>
 					</li>
 					<li>
-						<a href="#pnr-sec">PNR</a>
+						<a href="#pnr-sec">PNR STATUS</a>
 					</li>
 					<li>
-						<a href="#skills">Avalibility</a>
+						<a href="#train-search">SEARCH TRAIN</a>
 					</li>
 					
-					<li>
-						<a href="#education">Station</a>
-					</li>
-					<li>
-						<a href="#portfolio">Train-Schedule</a>
-					</li>
-					<li>
-						<a href="#contact">About Us</a>
-					</li>
 				</ul>
             </div>
             <div class="bar">
@@ -62,17 +53,7 @@
                     <a href="#pnr-sec">PNR</a>
                 </li>
                 <li>
-                    <a href="#skills">Avalibility</a>
-                </li>
-                
-                <li>
-                    <a href="#education">Station</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Train-Schedule</a>
-                </li>
-                <li>
-                    <a href="#contact">About Us</a>
+                    <a href="#train-search">SEARCH TRAIN</a>
                 </li>
             </ul>
         </div>
@@ -82,6 +63,7 @@
                 <div class="welcome">
                     <h1>Welcome to RailGuru!</h1>
                     <h2>We can help you in <br><span class="auto-type"></span></h2>
+    
                 </div>
                 <div class="titles">
                     <div class="tab">
@@ -143,10 +125,20 @@
                             </div>
                         </div>
                       </div>
+                      <div class="helpline">
+                        <marquee>
+                            139: For public grievances, PNR enquiries, accommodation availability, fare enquiries,and current train running position, 182: For security-related issues, 1800111321: For complaints, 138: For cleanliness, food and catering, coach maintenance, medical emergencies, and linen. The SMS number 9717630982.  IRCTC customer care: 0755-3934141,0755-6610661, Fax 011-23345400
+                        </marquee>
+                      </div>
+                    
                 </div>
             </div>
         </div>
-
+        <div class="decorative">
+            <div class="intro">
+                Are you tired of navigating through the complex and time-consuming interface of the official Indian Railway IRCTC website? Welcome to RailGuru, your hassle-free, user-friendly solution for all your railway inquiries. With RailGuru, you can access all the essential information you need for your train journey without the need for a login, and we offer so much more!
+            </div>
+        </div>
         <section id="pnr-sec">
             <div class="sec-head">
                 <div class="head">
@@ -206,6 +198,7 @@
                 </div>
             </div>
         </section>
+
         <section id="train-search">
             <div class="sec-head">
                 <div class="head">
@@ -236,11 +229,12 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type",{
-            strings: ["Check PNR Status", "Find Train", "Check Seat Availability","Many More..."],
+            strings: ["Check PNR Status", "Find Train"],
             typeSpeed: 70,
-            backSpeed: 20,
+            backSpeed: 30,
             loop: true
         })
+    
     </script>
     <script src="./Working/pnr.js"></script>
     <script src="./Working/trainsearch.js"></script>

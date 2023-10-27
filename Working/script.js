@@ -14,7 +14,7 @@ function launch(){
     },0)
 }
 window.onload = launch()
-
+ 
 //dropdown
 var drop = document.querySelector(".dropdown");
 var barElement = document.querySelector(".bar")
