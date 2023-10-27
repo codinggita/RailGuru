@@ -11,7 +11,7 @@ function launch(){
 
         win.style.display = "none";
         document.querySelector(".content").style.display = "block";
-    },4000)
+    },0)
 }
 window.onload = launch()
 
