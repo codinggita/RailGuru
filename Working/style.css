@@ -156,9 +156,11 @@ nav{
     font-size: 1.3rem;
     color: white;
     text-transform: capitalize;
+
+
 }
 .main-nav{
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-image: url("../Media/home.png");
     background-position: center;
@@ -186,7 +188,8 @@ nav{
 }
 .titles{
     width: 95%;
-    margin: 70px 2.5%;
+    margin: 50px 2.5%;
+    position: relative;
 }
 @media only screen and (max-width: 800px) {
     
@@ -268,6 +271,49 @@ nav{
   }
   .info span{
     display: block;
+  }
+  #i{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #wtg{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 250px;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.08);
+  }
+
+  .inclass{
+    margin-bottom: 7px;
+    margin-right: 10px;
+    width: 250px;
+    height: 47px;
+    background-color: rgba(0,0,0,.9);
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    border-radius: 15px;
+    border-bottom: 2px solid #0d9ee1;
+  }
+  #date{
+    background-color: #0096fa6b;
+    color: white;
+   
+  }
+  .inclass::placeholder{
+    color: #1b8dc1;
+
+  }
+  @media only screen and (max-width:350px){
+    .inclass{
+        width: 80%;
+    }
   }
   @media only screen and (max-width: 550px) {
     .welcome h2 br{
@@ -624,7 +670,17 @@ section:nth-child(2n)
 .pnr-table table tr td:last-child{
     width: 70%;
 }
-
+.note{
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #0096fa6b;
+    border-radius: 30px;
+}
+.note h4{
+    text-align: center;
+    color: white;
+}
 @media only screen and (max-width:500px){
     .pnr-table table tr td:last-child{
         width: 100%;

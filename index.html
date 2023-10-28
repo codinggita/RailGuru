@@ -31,6 +31,7 @@
 					<li>
 						<a href="#">Home</a>
 					</li>
+                    
 					<li>
 						<a href="#pnr-sec">PNR STATUS</a>
 					</li>
@@ -49,6 +50,7 @@
                 <li>
                     <a href="#">Home</a>
                 </li>
+                
                 <li>
                     <a href="#pnr-sec">PNR</a>
                 </li>
@@ -67,6 +69,9 @@
                 </div>
                 <div class="titles">
                     <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'wtg') ">WHERE TO GO?</button>
+                    </div>
+                    <div class="tab">
                         <button class="tablinks" onclick="openCity(event, 'PNR') ">PNR STATUS ENQUIRY</button>
                     </div>
                     <div class="tab">
@@ -74,6 +79,14 @@
                     </div>
                       
                       <!-- Tab content -->
+                        <div id="wtg" >
+                            <input id="fromstation" class="inclass" type="text" placeholder="From Station">
+                            <input id="tostation" class="inclass" type="text" placeholder="To Station">
+                            <input id="date" class="inclass" type="date">
+                            <button id="find-train" class="inclass">Let's Find Out</button>
+                        </div>
+
+
                       <div id="PNR" class="tabcontent">
                         <div class="tabinfo">
                             <div class="icon">
@@ -332,11 +345,31 @@
                         <td>Passenger Not Turned Up.</td>
                     </tr>
                 </table>
+    
                 <div class="timeline-divider">
 					<div class="timeline-traveller">
 						<i class="fa-solid fa-train"></i>
 					</div>
 				</div>
+            </div>
+            <div class="note">
+                <h4>NOTE</h4>
+                <div>
+                    <ul>
+                        <li>
+                            No refund shall be granted on the confirmed ticket after four hours before the scheduled departure of the train.
+                        </li>
+                        <li>
+                            No refund shall be granted on the RAC or Waitlisted ticket after thirty minutes before the scheduled departure of the train.
+                        </li>
+                        <li>
+                            In case, on a party e-ticket or a family e-ticket issued for travel of more than one passenger, some passengers have confirmed reservation and others are on RAC or waiting list, full refund of fare , less clerkage, shall be admissible for confirmed passengers also subject to the condition that the ticket shall be cancelled online or online TDR shall be filed for all the passengers upto thirty minutes before the scheduled departure of the train.
+                        </li>
+                        <li>
+                            Before Cancellation, please refer New Refund Rule 2015 w.e.f 12-Nov-2015.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -379,5 +412,6 @@
     </script>
     <script src="./Working/pnr.js"></script>
     <script src="./Working/trainsearch.js"></script>
+    <script src="./Working/wherto.js"></script>
 </body>
 </html>
