@@ -306,6 +306,9 @@ nav{
     color: white;
    
   }
+  #date::-webkit-calendar-picker-indicator 
+  { font-size: 2rem;}
+  
   .inclass::placeholder{
     color: #1b8dc1;
 
