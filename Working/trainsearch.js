@@ -7,6 +7,7 @@ ttopbutton.addEventListener('click',function(){
     ttopvale.value = "";
     // train_result.style.display = "none";
     getResult();
+    document.getElementById('train-search').scrollIntoView({behavior:'smooth'});
 })
 
 var bbut = document.getElementById('train-name3');

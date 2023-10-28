@@ -530,7 +530,7 @@ section:nth-child(2n)
 	width: 20px;
 	border: 2px dashed #0096fa6b;
 	left: 5%;
-	top: 1%;
+	top: 0%;
     box-sizing: border-box;
 }
 .timeline-traveller 
@@ -539,7 +539,6 @@ section:nth-child(2n)
 	top: 300px;
 	z-index: 1;
 	color: #2857a4;
-	margin-top: -2rem;
     margin-left: -0.35rem;
 }
 .timeline-traveller i 
@@ -588,4 +587,48 @@ section:nth-child(2n)
     .feature{
         width: 100%;
     }
+}
+
+.pnr-table{
+    font-size: 1.2rem;
+    position: relative;
+    width: 90%;
+}
+.pnr-table table{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: 42px;
+}
+.pnr-table table tr{
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pnr-table table tr td{
+    display: inline-block;
+
+}
+.pnr-table table tr td:first-child{
+    text-align: center;
+    font-weight: 600;
+    width: 110px;
+    background-color: #2857a4;
+    color: white;
+    border-radius: 30px;
+    height: 30px;
+}
+.pnr-table table tr td:last-child{
+    width: 70%;
+}
+
+@media only screen and (max-width:500px){
+    .pnr-table table tr td:last-child{
+        width: 100%;
+        text-align: center;
+    }
+    
 }
