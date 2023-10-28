@@ -156,7 +156,7 @@ nav{
     font-size: 1.3rem;
     color: white;
     text-transform: capitalize;
-
+    margin-top: 3px;
 
 }
 .main-nav{
@@ -285,13 +285,19 @@ nav{
     justify-content: space-between;
     background-color: rgba(0,0,0,.08);
   }
-
+#wtg button{
+    border: 2px solid #0d9ee1;
+    transition: 0.8s;
+}
+#wtg button:hover{
+    background-color: #0096fa6b;
+}
   .inclass{
     margin-bottom: 7px;
     margin-right: 10px;
     width: 250px;
     height: 47px;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.7);
     font-size: 1.2rem;
     color: white;
     font-weight: 600;
@@ -308,7 +314,7 @@ nav{
   }
   #date::-webkit-calendar-picker-indicator 
   { font-size: 2rem;}
-  
+
   .inclass::placeholder{
     color: #1b8dc1;
 
@@ -552,6 +558,8 @@ section:nth-child(2n)
 }
 .divder-h{
     width: 65%;
+    display: flex;
+    justify-content: center;
     border-bottom: 1px dotted #324a8b;
 }
 
