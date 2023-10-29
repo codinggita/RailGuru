@@ -4916,11 +4916,12 @@ searchButton.addEventListener('click',async(e)=>{
         alert("Sir/Mam, Please give me all details!");
     }
     else{
+        
         const from = findStationCode(fromStation.value, jsonData);
         const to = findStationCode(toStation.value,jsonData);
 
         console.log(from);
-        const response = await fetch(`http://localhost:5000/wheretogo?from=${from}&to=${to}&date=${date.value}`); // Use /proxy path
+        const response = await fetch(`https://railguru-server-prokrishpatel.onrender.com/wheretogo?from=${from}&to=${to}&date=${date.value}`); // Use /proxy path
         const data = await response.json();
         result.innerHTML = "";
         if(data.data =="No direct trains found"){
@@ -5015,6 +5016,7 @@ searchButton.addEventListener('click',async(e)=>{
                 result.appendChild(tr);
 
             }
+            result.scrollIntoView({behavior:'smooth'});
         }
         
     }

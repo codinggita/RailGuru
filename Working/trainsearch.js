@@ -1,21 +1,27 @@
 var trainToSearch = "";
 var ttopbutton = document.getElementById('trainn-btn');
 var train_result =document.getElementById('result-train');
+var bbut = document.getElementById('train-name3');
+var ttopvale = document.getElementById('trains');
+
+
 ttopbutton.addEventListener('click',function(){
-    var ttopvale = document.getElementById('trains');
+    
     trainToSearch = ttopvale.value;
     ttopvale.value = "";
-    // train_result.style.display = "none";
     getResult();
     document.getElementById('train-search').scrollIntoView({behavior:'smooth'});
 })
 
-var bbut = document.getElementById('train-name3');
+
+
 bbut.addEventListener('click',function(){
     trainToSearch = document.getElementById('train-name2').value;
     document.getElementById('train-name2').value = "";
     getResult();
 })
+
+  
 function getResult(){
     var check = false;
     const url = 'https://trains.p.rapidapi.com/';
@@ -30,6 +36,8 @@ function getResult(){
             { search: trainToSearch }
             )
     };
+    
+
     fetch(url, options)
     .then(response => {
         if (response.ok) {
