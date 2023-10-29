@@ -704,3 +704,72 @@ section:nth-child(2n)
     }
     
 }
+footer{
+    width: 100%;
+    font-size: 1rem;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+.s{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.slideshow-container {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    
+  }
+.slideshow-container img{
+    height: 100%;
+    width: 100%;
+}
+  .mySlides {
+    display: none;
+    border-radius: 20px;
+  }
+  .trbox{
+    width: 60%;
+    height: 100px;
+    background-color: #d0cdcd29;
+    margin: 7px;
+    border-radius: 10px;
+    padding: 7px;
+  }
+  .sname{
+    font-size: 1rem;
+    color: #2857a4;
+  }
+  .other{
+    font-size: 0.9rem;
+    color: black;
+  }
+  #route-result{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .good{
+    width: 100%;
+    height: 300px;
+    background-image: url("../Media/goodby.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+  }
+  .good .overlay{
+    padding-top: 130px;
+  }
+.good .overlay h1{
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
