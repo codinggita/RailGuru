@@ -152,7 +152,7 @@ nav{
 .help{
     height: 61px;
 }
-.helpline{
+.helpline {
     background-color: #0096fa6b;
     width: 100%;
     height: 3rem;
@@ -162,8 +162,25 @@ nav{
     color: white;
     text-transform: capitalize;
     margin-top: 3px;
-
+    overflow: hidden;
 }
+
+.marquee-text {
+    white-space: nowrap;
+    animation: marquee 60s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-280%);
+    }
+    
+}
+
+
 .main-nav{
     height: 600px;
     width: 100%;
@@ -624,6 +641,8 @@ section:nth-child(2n)
 .feature{
     width: 45%;
     margin: 10px;
+    display: block;
+    
 }
 .feature div{
     width: 100%;
@@ -718,7 +737,7 @@ footer{
     margin: 10px 0;
 }
 .slideshow-container {
-    width: 600px;
+    width: 500px;
     height: 400px;
     overflow: hidden;
     position: relative;
