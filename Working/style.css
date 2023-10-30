@@ -791,6 +791,7 @@ footer{
     z-index: 2;
     color: white;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 /* Styles for the loader container */
