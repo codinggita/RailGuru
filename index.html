@@ -1,8 +1,12 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head>
+    <title>Railguru - Your Ultimate Train Travel Companion</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Railguru is your one-stop destination for all things train-related. Check PNR status, find train routes, book tickets, and more. Get reliable and up-to-date information for a smooth train journey.">
+    <meta name="keywords" content="PNR status, train route, book tickets, find trains, train search, Krish Patel, Railguru">
+    <meta name="author" content="Krish Patel">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="Media/icon_nbg.png">
     <!-- animate -->
@@ -13,7 +17,7 @@
     <link rel="stylesheet" href="Working/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>RailGuru</title>
+
 </head>
 <body>
     <div class="onStart animate__animated animate__slideOutUp animate__delay-2s grad-bg-blue">
@@ -21,6 +25,14 @@
         <br>
         <h1 class="heading1 animate__animated animate__flipInX">RailGuru</h1>
     </div>
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-image">
+                <img src="Media/icon_nbg - Copy.png" alt="Loader">
+            </div>
+        </div>
+    </div>
+
     <div class="content">
         <!-- nav -->
         <nav>
@@ -455,8 +467,6 @@
             backSpeed: 30,
             loop: true
         })
-       
-    
     </script>
     <script src="./Working/route.js"></script>
     <script src="./Working/pnr.js"></script>

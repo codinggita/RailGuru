@@ -1,4 +1,6 @@
 document.getElementById('getrout3').addEventListener('click',function(){
+    load();
+    setTimeout(unload,3000);
     let train = document.getElementById('getrout2').value;
 
     let res = document.getElementById('route-result');

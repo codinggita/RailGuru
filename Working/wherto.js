@@ -4912,11 +4912,13 @@ function findStationCode(stationName, jsonData) {
 
 
 searchButton.addEventListener('click',async(e)=>{
+
     if(fromStation.value == "" || toStation.value == "" || date.value == ""){
         alert("Sir/Mam, Please give me all details!");
     }
     else{
-        
+        load();
+        setTimeout(unload,5000);
         const from = findStationCode(fromStation.value, jsonData);
         const to = findStationCode(toStation.value,jsonData);
 

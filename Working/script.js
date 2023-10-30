@@ -1,4 +1,11 @@
 //on start
+loaderContainer = document.querySelector('.loader-container');
+function load(){
+    loaderContainer.style.display = "flex";
+}
+function unload(){
+    loaderContainer.style.display = "none";
+}
 
 function launch(){
   var speechSynthesis = window.speechSynthesis;

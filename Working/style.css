@@ -792,3 +792,65 @@ footer{
     color: white;
     text-align: center;
 }
+
+/* Styles for the loader container */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none;
+}
+
+/* Styles for the loader and image */
+.loader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .loader-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader .loader-image img {
+    width: 78px; /* Adjust the width and height to fit your image */
+    height: 50px;
+}
+
+/* Styles for the rotating loader */
+.loader:after {
+    content: "";
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styles for the website content */
+.content {
+    display: none; /* Hide the content until it's ready */
+}
+

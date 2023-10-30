@@ -1,4 +1,5 @@
 
+
 function speakM(meaasge){
     var speechSynthesis = window.speechSynthesis;
     var speechMessage = new SpeechSynthesisUtterance(message);
@@ -16,6 +17,8 @@ function scrollToPNR2() {
 document.getElementById('pnr-btn').addEventListener('click', scrollToPNR2);
 
 function parstatus(){
+    load();
+    setTimeout(unload,3000);
     document.getElementById('pnr-result').style.display = 'none';
     
     const pnr = document.getElementById('pnr2').value;
@@ -44,6 +47,7 @@ function parstatus(){
     fetch(url,options)
     .then((response)=>response.json())
     .then((response)=>{
+        
         if (response.error === "PNR info not found. PNR data not found.")
          {
             let m = "कृपया वैध पीएनआर नंबर दर्ज करें, यह आपके टिकट के शीर्ष पर उल्लिखित है";
@@ -71,6 +75,7 @@ function parstatus(){
         }
         else if(response.error=="")
         {
+
          document.getElementById('pnr-result').style.display = 'flex';
           ss.innerText = response.data.boardingInfo.stationName;
            sc.innerText = response.data.boardingInfo.arrivalTime;

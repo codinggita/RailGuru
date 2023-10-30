@@ -6,7 +6,8 @@ var ttopvale = document.getElementById('trains');
 
 
 ttopbutton.addEventListener('click',function(){
-    
+    load();
+    setTimeout(unload,3000);
     trainToSearch = ttopvale.value;
     ttopvale.value = "";
     getResult();
@@ -16,6 +17,8 @@ ttopbutton.addEventListener('click',function(){
 
 
 bbut.addEventListener('click',function(){
+    load();
+    setTimeout(unload,3000);
     trainToSearch = document.getElementById('train-name2').value;
     document.getElementById('train-name2').value = "";
     getResult();
