@@ -4924,10 +4924,18 @@ searchButton.addEventListener('click',async(e)=>{
         const response = await fetch(`https://railguru-server-prokrishpatel.onrender.com/wheretogo?from=${from}&to=${to}&date=${date.value}`); // Use /proxy path
         const data = await response.json();
         result.innerHTML = "";
+        console.log(data)
         if(data.data =="No direct trains found"){
             alert("No direct trains found");
         }
+        else if(data.data =="From station not found"){
+            alert("From station not found");
+        }
+        else if(data.data=="From station not found"){
+            alert("To station not found");
+        }
         else{
+
             result.innerHTML = "";
             for(let tra of data.data){
                 let tr = document.createElement('div');
