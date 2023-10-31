@@ -1,9 +1,16 @@
 //on start
+loaderContainer = document.querySelector('.loader-container');
+function load(){
+    loaderContainer.style.display = "flex";
+}
+function unload(){
+    loaderContainer.style.display = "none";
+}
 
 function launch(){
   var speechSynthesis = window.speechSynthesis;
   var speechMessage2 = new SpeechSynthesisUtterance("Welcome To railguru");
-  speechSynthesis.speak(speechMessage2);
+  // speechSynthesis.speak(speechMessage2);
     var win = document.querySelector(".onStart");
     win.style.display = "flex";
     
@@ -11,10 +18,10 @@ function launch(){
 
         win.style.display = "none";
         document.querySelector(".content").style.display = "block";
-    },0)
+    },4000)
 }
 window.onload = launch()
-
+ 
 //dropdown
 var drop = document.querySelector(".dropdown");
 var barElement = document.querySelector(".bar")
@@ -56,3 +63,20 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   }
 document.querySelector(".tablinks").click()
+let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds (2000 milliseconds)
+}
+
+showSlides();
